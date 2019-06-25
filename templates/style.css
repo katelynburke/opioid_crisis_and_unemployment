@@ -1,0 +1,18 @@
+.jumbotron h1{
+    color: navy;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: gainsboro;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.jumbotron {
+    background-color: gainsboro;
+}
+
+.headtext {
+    font-size: 10px;
+}
