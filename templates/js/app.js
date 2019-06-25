@@ -49,9 +49,45 @@ function highlightFeature(e) {
 
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
       layer.bringToFront();
+      info.update(layer.feature.properties);
   }
 }
 
 function resetHighlight(e) {
   geojson.resetStyle(e.target);
+  info.update();
 }
+
+function zoomToFeature(e) {
+  map.fitBounds(e.target.getBounds());
+}
+
+function onEachFeature(feature, layer) {
+  layer.on({
+      mouseover: highlightFeature,
+      mouseout: resetHighlight,
+      click: zoomToFeature
+  });
+}
+
+geojson = L.geoJson(statesData, {
+  style: style,
+  onEachFeature: onEachFeature
+}).addTo(map);
+
+// Custom info Control
+var info = L.control();
+
+info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info'); 
+    this.update();
+    return this._div;
+};
+
+info.update = function (props) {
+    this._div.innerHTML = '<h4>Overdoses Death Rate by States</h4>' +  (props ?
+        '<b>' + props.name + '</b><br />' + props.overdose + '% of population dead because of overdose'
+        : 'Mouse over a state');
+};
+
+info.addTo(map);
