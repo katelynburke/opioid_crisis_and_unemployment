@@ -21,14 +21,14 @@
     <div class="row">
       <div class="col-md-2">
         <div class="well">
-          <h5>SELECT Sample:</h5>
+          <h5>SELECT State:</h5>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h3 class="panel-title">Sample MetaData</h3>
+            <h3 class="panel-title">State Data</h3>
           </div>
-          <div id="sample-metadata" class="panel-body"></div>
+          <div id="state-data" class="panel-body"></div>
         </div>
       </div>
       <div class="col-md-5">
@@ -48,8 +48,9 @@
   <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
-
+  <!-- <script src="{{ url_for('static', filename='js/app.js') }}"></script> -->
+  <script type="text/javascript" src="./static/js/app.js"></script>
+  
 </body>
 
 </html>
