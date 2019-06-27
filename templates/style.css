@@ -16,3 +16,21 @@
 .headtext {
     font-size: 10px;
 }
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 15px;
+    width: 30%;
+
+  }
+
+  .imgs {
+    display: block;
+    margin-left: 15px;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 30%;
+
+  }
