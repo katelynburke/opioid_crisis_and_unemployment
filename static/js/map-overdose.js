@@ -8,7 +8,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   accessToken: API_KEY
 }).addTo(map);
 
-L.geoJson(statesData).addTo(map)
+L.geoJson(oddata).addTo(map)
 
 // define the color for each category
 function getColor(d) {
@@ -34,7 +34,7 @@ function style(feature) {
   };
 }
 
-L.geoJson(statesData, {style: style}).addTo(map);
+L.geoJson(oddata, {style: style}).addTo(map);
 
 // define the mouseout action
 function highlightFeature(e) {
@@ -70,7 +70,7 @@ function onEachFeature(feature, layer) {
   });
 }
 
-geojson = L.geoJson(statesData, {
+geojson = L.geoJson(oddata, {
   style: style,
   onEachFeature: onEachFeature
 }).addTo(map);
