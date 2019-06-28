@@ -31,7 +31,7 @@ session = Session(db.engine)
 # create route that renders index.html template
 @app.route("/")
 def home():
-    return render_template("index2.html")
+    return render_template("index.html")
 
 @app.route("/names")
 def names():
