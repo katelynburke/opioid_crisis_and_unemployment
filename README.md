@@ -18,23 +18,48 @@ We chose to research the trends between opioid overdose deaths and the unemploym
 ### Coding Approach
 
 - Our goal was to create an informative and interactive dashboard:
-  - hdhd
+  - Overdose rate and unemployment rate over the Leaflet map
+  - Using ‘Lollipop’ graphs (D3) to illustrate average income
+  - Using the Flask webserver to hold the index page
 
-
+- Coding Languages Used: Python, Javascript
+- Visualization Libraries Used: D3, Leaflet, Chart.js, JavaScript 
+- Database Used: SQLite
+- Python Pandas to clean the data 
 
 ### Data Munging Techniques
 
+- Used Pandas to clean and merge data in the CSV files and calculate the overdose rate and the average income by state 
+- Based on the data in CSV files, SQLite database is made through an app called BD Browser (SQLite)
+- The SQLite database includes two tables (overdoses and unemployment)
+- The SQLite tables are pulled into the Flask app and filtered by state using the Pandas library
+- The data is then returned in the form of JSON-ified dictionaries.
 
 ### Final Visualizations
 
+**D3**
+
+**Leaflet**
+
+**Chart.js**
 
 ### Final Dashboard
 
 
 ### Conclusion
 
+- There seems to be some correlation between the unemployment rate and number of overdose deaths in the U.S.
+- While unemployment could be one variable that could impact the overdose death rate, there are other factors that were not measured in this project
+
+- **Next Steps:** Instead of using the http server, we would try to run the D3 server with Flask (this would solve the problem of having the dropdown and D3 graphs working at the same time) 
 
 ### Challenges 
+
+- Combining the code and getting all of the graphs to work on the dashboard
+- Getting the JSON data that we pulled from the SQLite database to populate in the drop-down
+- Ensuring that we were referencing the correct index.html and Javascript files -- which became complicated due to the number of individual files we had  
+- Running the Flask app and the Python server at the same time
+- Merging changes between different branches on the GitHub
 
 
 
