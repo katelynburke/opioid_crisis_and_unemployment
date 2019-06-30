@@ -37,8 +37,8 @@ function style(feature) {
 L.geoJson(oddata, {style: style}).addTo(map);
 
 // define the mouseout action
-function highlightFeature(e) {
-  var layer = e.target;
+function highlightFeature(i) {
+  var layer = i.target;
 
   layer.setStyle({
       weight: 5,
@@ -53,13 +53,14 @@ function highlightFeature(e) {
   }
 }
 
-function resetHighlight(e) {
-  geojson.resetStyle(e.target);
+function resetHighlight(i) {
+  var layer = i.target
+  geojson.resetStyle(layer);
   info.update();
 }
 
-function zoomToFeature(e) {
-  map.fitBounds(e.target.getBounds());
+function zoomToFeature(i) {
+  map.fitBounds(i.target.getBounds());
 }
 
 function onEachFeature(feature, layer) {
