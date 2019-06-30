@@ -8,6 +8,12 @@ According to the National Institute on Drug Abuse, more than 130 people in the U
 
 We chose to research the trends between opioid overdose deaths and the unemployment rate in the United States. We created a dashboard that displays interactive visualizations comparing tthe overdose rate and unemployment rate by state. 
 
+### Dashboard
+
+- To view the dashboard:
+ 
+![dashboard](https://github.com/katelynburke/opioid_crisis_and_unemployment/blob/master/images/dashboard1.png)
+
 ### Data Sources
 
 - Called Overdose data API from Kaggle.com - U.S. Opiate Prescription Data
@@ -44,9 +50,6 @@ We chose to research the trends between opioid overdose deaths and the unemploym
 **Chart.js**
 ![chartjs](https://github.com/katelynburke/opioid_crisis_and_unemployment/blob/master/images/chartjs.png)
 
-### Final Dashboard
-
-
 ### Conclusion
 
 - There seems to be some correlation between the unemployment rate and number of overdose deaths in the U.S.
@@ -61,6 +64,8 @@ We chose to research the trends between opioid overdose deaths and the unemploym
 - Ensuring that we were referencing the correct index.html and Javascript files -- which became complicated due to the number of individual files we had  
 - Running the Flask app and the Python server at the same time
 - Merging changes between different branches on the GitHub
+
+![json](https://github.com/katelynburke/opioid_crisis_and_unemployment/blob/master/images/json.png)
 
 
 
