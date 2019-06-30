@@ -10,7 +10,7 @@ We chose to research the trends between opioid overdose deaths and the unemploym
 
 ### Dashboard
 
-- To view the dashboard:
+- To view the dashboard: Run the Flask App through app.py
  
 ![dashboard](https://github.com/katelynburke/opioid_crisis_and_unemployment/blob/master/images/dashboard1.png)
 
@@ -44,6 +44,8 @@ We chose to research the trends between opioid overdose deaths and the unemploym
 ### Final Visualizations
 
 **D3**
+
+![d3chart](https://github.com/katelynburke/opioid_crisis_and_unemployment/blob/master/images/lollipop.png)
 
 **Leaflet**
 
