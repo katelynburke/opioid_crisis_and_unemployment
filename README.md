@@ -67,7 +67,4 @@ We chose to research the trends between opioid overdose deaths and the unemploym
 - Running the Flask app and the Python server at the same time
 - Merging changes between different branches on the GitHub
 
-![json](https://github.com/katelynburke/opioid_crisis_and_unemployment/blob/master/images/json.png)
-
-
 
