@@ -42,6 +42,7 @@ We chose to research the trends between opioid overdose deaths and the unemploym
 **Leaflet**
 
 **Chart.js**
+![chartjs](https://github.com/katelynburke/opioid_crisis_and_unemployment/blob/master/images/chartjs.png)
 
 ### Final Dashboard
 
